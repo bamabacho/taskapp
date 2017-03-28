@@ -1,0 +1,33 @@
+
+
+{% extends 'tasks/base.html' %}
+
+{% block content %}
+		
+       {% for task in tasks %}
+		                <div class="task-tile">
+		                    <div class="date">
+		                   
+		                    </div>
+		                    <a href="{% url 'post_detail' pk=task.pk %}"><h1>{{ task.task_name }}</h1></a>
+		                    <p>{{ task.task_details |linebreaksbr }}</p>
+		                    <p>{{ task.created_date }}</p>
+		                    <div id='time'>Current Date:</div>
+		                    <p><script type="text/javascript">
+		                    	var currentTime = Date.now();
+		                    	document.getElementById('time').innerHTML = currentTime	;
+		                    </script></p>
+		                    {% if task.completed == True %} 
+		                    <h2>Completed? Yes</h2>
+		                    {% else %}
+		                    <h2>Completed? No</h2>
+		                   {% endif %}
+		                </div>
+		            {% endfor %}
+{% endblock %}
+		       	
+	
+
+
+
+

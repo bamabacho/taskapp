@@ -1,0 +1,45 @@
+body{
+	margin: 0px;
+	background-color: #DCDFE0;
+}
+
+a:hover{
+	text-decoration: none;
+	opacity:0.8;
+}
+
+h1  {
+    color: #548CE8;
+}
+
+header{
+	background-color:#8335B8;
+	margin:0px;
+	padding:5px 20px 5px 20px;
+}
+
+header h1{
+	color:white;
+	font-family: 'Abril Fatface';
+	font-size: 3em;
+	margin:0px;
+}
+
+header a{
+	text-decoration: none;
+	color:white;
+}
+
+header a:hover{
+	text-decoration: none;
+	color:white;
+	opacity: 0.8
+}
+
+.task-tile{
+	display: inline-block;
+	background-color: white;
+	padding: 20px;
+	margin:10px;
+	box-shadow: 1px 1px 1px 1px;
+}

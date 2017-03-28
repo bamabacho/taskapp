@@ -1,0 +1,11 @@
+{% extends 'tasks/base.html' %}
+
+{% for board in boards %}
+
+<div class='board-tile'>
+	<h1>{{board.title}}</h1>
+	<h2>{{board.description}}</h2>
+	<h3>{{board.board_task}}</h3>
+</div>
+
+{% endfor %}

@@ -1,0 +1,13 @@
+{% extends 'tasks/base.html' %}
+
+{% block content %}
+<div class='task-tile'>
+	<h1>{{ task.task_name }}</h1>
+	    <a class="btn btn-default" href="{% url 'post_edit' pk=task.pk %}"><span class="glyphicon glyphicon-pencil">Edit</span></a>
+	        
+	        </a>
+	        <p>{{ task.task_details|linebreaksbr }}</p>
+	        <p>{{ task.completed }}</p>
+ </div>
+
+ {% endblock %}
